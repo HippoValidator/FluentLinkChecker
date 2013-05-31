@@ -1,0 +1,18 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <version>$version$</version>
+    <authors>FluentLinkChecker</authors>
+    <owners />
+    <dependencies />
+    <id>FluentLinkChecker</id>
+    <title>FluentLinkChecker</title>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A fluent api for doing broken link checks of web resources.</description>
+    <projectUrl>https://github.com/HippoValidator/FluentLinkChecker</projectUrl>
+  </metadata>
+  <files>
+    <file src="bin\$Configuration$\FluentLinkChecker.dll" target="lib\net40\FluentLinkChecker.dll" />
+    <file src="bin\$Configuration$\FluentLinkChecker.pdb" target="lib\net40\FluentLinkChecker.pdb" />
+  </files>
+</package>
