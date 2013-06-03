@@ -30,13 +30,13 @@ namespace FluentLinkChecker.Configuration
             return this;
         }
 
-        public FluentLinkCheckerConfiguration Before(Action<HttpWebRequest> configurer)
+        public FluentLinkCheckerConfiguration OnRequest(Action<HttpWebRequest> configurer)
         {
             _beforeConfigurers.Add(configurer);
             return this;
         }
 
-        public FluentLinkCheckerConfiguration After(Action<HttpWebResponse> configurer)
+        public FluentLinkCheckerConfiguration OnResponse(Action<HttpWebResponse> configurer)
         {
             _afterConfigurers.Add(configurer);
             return this;

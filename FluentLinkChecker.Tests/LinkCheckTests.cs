@@ -25,8 +25,8 @@ namespace FluentLinkChecker.Tests
                 LinkCheck
                     .On(x => x.Html("<a href=\"http://www.google.com\">Google</a>"))
                     .AsBot(x => x.Bing())
-                    .Before(x => x.Headers.Add("X-From", "user@example.com"))
-                    .After(x => Assert.That(x != null))
+                    .OnRequest(x => x.Headers.Add("X-From", "user@example.com"))
+                    .OnResponse(x => Assert.That(x != null))
                     .Start();
 
             Assert.That(result != null);
@@ -134,19 +134,19 @@ namespace FluentLinkChecker.Tests
             bool one = false, two = false, three = false, four = false;
             LinkCheck
                 .On(x => x.Html("<a href=\"http://www.google.com\">Link</a>"))
-                .Before(x =>
+                .OnRequest(x =>
                     {
                         one = true;
                     })
-                .Before(x =>
+                .OnRequest(x =>
                     {
                         two = true;
                     })
-                .After(x =>
+                .OnResponse(x =>
                     {
                         three = true;
                     })
-                .After(x =>
+                .OnResponse(x =>
                     {
                         four = true;
                     })
