@@ -13,7 +13,7 @@ A fluent api for doing broken link checks of web resources. Checking a resource 
     }
 
 ## Bots
-FluentLinkChecker doesn't set any HTTP request headers as default, but sometimes you want to pretend yourself as a bot. Out of the box Googlebot and Bingbot is implemented, but you can easily add your own. Checking links as a bot looks something like this:
+FluentLinkChecker doesn't set any HTTP request headers as default, but sometimes you want to present yourself as a bot. Out of the box Googlebot and Bingbot is implemented, but you can easily add your own. Checking links as a bot looks something like this:
 
     var result =
         LinkCheck
