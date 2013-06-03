@@ -10,6 +10,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A fluent api for doing broken link checks of web resources.</description>
     <projectUrl>https://github.com/HippoValidator/FluentLinkChecker</projectUrl>
+    <iconUrl>https://raw.github.com/HippoValidator/FluentLinkChecker/master/icon.png</iconUrl>
   </metadata>
   <files>
     <file src="bin\$Configuration$\FluentLinkChecker.dll" target="lib\net40\FluentLinkChecker.dll" />
